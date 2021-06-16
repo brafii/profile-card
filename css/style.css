@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --verydark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+}
+body{
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+}
+.section{
+    background-color: #fff;
+    /* display: flex; */
+    width: 25%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section1{
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+.section2{
+    text-align: center;
+}
+.section-image img{
+    border-radius: 50%;
+    border: 7px solid #fff;
+    overflow: hidden;
+    margin-top: -40px;
+}
+.section2 #first-child{
+    margin-top: 17px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.section3{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 20px 0;
+    border-top: 1px solid hsl(0, 0%, 59%);
+}
+.section3 .footer{
+    margin-top: 20px;
+}
+.footer p{
+    font-size: 10px;
+    margin-top: 7px;
+    color: hsl(0, 11%, 12%); 
+    opacity: .5;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    .section{
+        background-color: #fff;
+        /* display: flex; */
+        width: 65%;
+        overflow: hidden;
+    }
+
+}
